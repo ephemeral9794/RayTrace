@@ -11,6 +11,9 @@ namespace RayTrace
 		static void Main(string[] args)
 		{
 			try {
+				/// http://www.sist.ac.jp/~iigura/ToyBox/
+				/// https://qiita.com/mebiusbox2/items/89e2db3b24e4c39502fe
+
 				// Image Test
 				/*int w = 640, h = 480;
 				Image image = new Image(w, h, Color.Gray);
