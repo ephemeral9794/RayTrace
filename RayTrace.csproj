@@ -45,7 +45,10 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RayTrace\Camera.cs" />
     <Compile Include="RayTrace\Image.cs" />
+    <Compile Include="RayTrace\Ray.cs" />
+    <Compile Include="RayTrace\Utility.cs" />
     <Compile Include="RayTrace\Vector3.cs" />
   </ItemGroup>
   <ItemGroup>

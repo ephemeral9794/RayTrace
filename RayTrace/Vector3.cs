@@ -72,10 +72,11 @@ namespace RayTrace
 			float inv = v.InverseLength; 
 			return v * inv;
 		}
-		public void Normalize() {
+		public Vector3 Normalize() {
 			X *= InverseLength;
 			Y *= InverseLength;
 			Z *= InverseLength;
+			return this;
 		}
 
 		// operator overload
