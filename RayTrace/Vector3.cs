@@ -67,6 +67,9 @@ namespace RayTrace
                                v1.Z * v2.X - v1.X * v2.Z,
                                v1.X * v2.Y - v1.Y * v2.X);
 		}
+		public static Vector3 Lerp(float t, Vector3 a, Vector3 b) {
+			return (1 - t) * a + t * b;
+		}
 
 		public static Vector3 Unit(Vector3 v) {
 			float inv = v.InverseLength; 

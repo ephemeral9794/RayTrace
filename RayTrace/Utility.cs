@@ -13,16 +13,14 @@ namespace RayTrace
 		public static Color ToColor(Ray r, Color draw, Color back) {
 			Vector3 d = r.Direction.Normalize();
 			float t = 0.5f * (r.Direction.Y + 1.0f);
-			return VectorToColor(Lerp(t, ColorToVector(draw), ColorToVector(back)));
+			return Color.Lerp(t, draw, back);
 		}
 		public static Color VectorToColor(Vector3 v) {
+			v.Normalize();
 			return new Color(v.X, v.Y, v.Z);
 		}
 		public static Vector3 ColorToVector(Color c) {
 			return new Vector3(c.R, c.G, c.B);
-		}
-		public static Vector3 Lerp(float t, Vector3 a, Vector3 b) {
-			return (1 - t) * a + t * b;
 		}
 	}
 }

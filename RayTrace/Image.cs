@@ -64,6 +64,10 @@ namespace RayTrace
 				return input;
 			}
 		}
+		public static Color Lerp(float t, Color c1, Color c2)
+		{
+			return (1 - t) * c1 + t * c2;
+		}
 
 		// see Blender
 		public static byte FloatToByte(float inValue) {
