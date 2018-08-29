@@ -16,9 +16,9 @@ namespace RayTrace
 				/// https://qiita.com/mebiusbox2/items/89e2db3b24e4c39502fe
 
 				// Image Test
-				Console.WriteLine("-- Image Test --");
-				int w = 1280, h = 640;
-				Image image = new Image(w, h, Color.Gray);
+				//Console.WriteLine("-- Image Test --");
+				//int w = 1280, h = 720;
+				//Image image = new Image(w, h, Color.Gray);
 				/*int n = Math.Min(w, h);
 				for (int y = 0; y < h; y++) {
 					Console.WriteLine($"Rendering (y = {y}) {(100.0 * y / (h - 1))} %");
@@ -90,6 +90,8 @@ namespace RayTrace
 				//image.Export(@"C:\Users\Administrator\Desktop\RayTrace_Sample03.ppm");
 
 				// Scene Test
+				int w = 1280, h = 720;
+				Image image = new Image(w, h, Color.Gray);
 				Scene scene = new Scene(image, new Color(0.5f, 0.7f, 1.0f));
 				scene.Render();
 				image.Export(@"C:\Users\Administrator\Desktop\RayTrace_Sample04.ppm");

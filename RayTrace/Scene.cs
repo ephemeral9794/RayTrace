@@ -24,8 +24,8 @@ namespace RayTrace
 			Vector3 cy = new Vector3(0.0f, 2.0f, 0.0f);
 			Vector3 cz = new Vector3(-2.0f, -1.0f, -1.0f);
 			//camera = new Camera(cx, cy, cz);
-			int w = image.Width, h = image.Height;
-			camera = new Camera(new Vector3(2,1,5), new Vector3(0,0,0), -Vector3.YAxis, 20.0f, w / h);
+			float aspect = (float)image.Width / image.Height;
+			camera = new Camera(new Vector3(0,0,5), new Vector3(0,0,0), Vector3.YAxis, 20.0f, aspect);
 
 			world = new ShapeList();
 			world.Add(new Sphere(new Vector3(0.0f, 0.0f, -1.0f), 0.5f));
