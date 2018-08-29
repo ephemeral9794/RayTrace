@@ -11,7 +11,7 @@ namespace RayTrace
 		public Vector3 point;
 		public Vector3 normal;
 	}
-	interface IShape {
+	public interface IShape {
 		bool Hit(Ray ray, float t0, float t1, out HitRect hitrect);
 	}
 }

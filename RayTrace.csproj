@@ -48,7 +48,9 @@
     <Compile Include="RayTrace\Camera.cs" />
     <Compile Include="RayTrace\Image.cs" />
     <Compile Include="RayTrace\Ray.cs" />
+    <Compile Include="RayTrace\Scene.cs" />
     <Compile Include="RayTrace\Shape.cs" />
+    <Compile Include="RayTrace\ShapeList.cs" />
     <Compile Include="RayTrace\Sphere.cs" />
     <Compile Include="RayTrace\Utility.cs" />
     <Compile Include="RayTrace\Vector3.cs" />
